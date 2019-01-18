@@ -1,28 +1,27 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware, combineReducers } from "redux";
-import { createLogger } from 'redux-logger';
-import { composeWithDevTools } from 'redux-devtools-extension';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
-import * as serviceWorker from "./serviceWorker";
-import "tachyons";
-import "./index.css";
-import App from "./containers/App";
-import { searchRobots, requestRobots } from "./reducers";
+import { createLogger } from 'redux-logger';
+import 'tachyons';
 
+import App from './containers/App';
+import registerServiceWorker from './registerServiceWorker';
+import { requestRobots, searchRobots } from './reducers'
 
-const logger = createLogger();
+import './index.css';
 
-const rootReducer = combineReducers({searchRobots, requestRobots});
+const logger = createLogger()
 
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunkMiddleware)));
+const rootReducers = combineReducers({requestRobots, searchRobots})
+
+const store = createStore(rootReducers, applyMiddleware(thunkMiddleware, logger))
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App/>
   </Provider>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
-serviceWorker.register();
-
+registerServiceWorker();
