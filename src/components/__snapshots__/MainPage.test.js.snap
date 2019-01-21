@@ -30,7 +30,7 @@ ShallowWrapper {
         <Scroll>
           <ErrorBoundary>
                     <CardList
-                              robots={[Function]}
+                              robots={Array []}
                     />
           </ErrorBoundary>
 </Scroll>,
@@ -66,7 +66,7 @@ ShallowWrapper {
         "props": Object {
           "children": <ErrorBoundary>
             <CardList
-                        robots={[Function]}
+                        robots={Array []}
             />
 </ErrorBoundary>,
         },
@@ -77,7 +77,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <CardList
-              robots={[Function]}
+              robots={Array []}
 />,
           },
           "ref": null,
@@ -86,7 +86,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "robots": [Function],
+              "robots": Array [],
             },
             "ref": null,
             "rendered": null,
@@ -113,7 +113,7 @@ ShallowWrapper {
           <Scroll>
             <ErrorBoundary>
                         <CardList
-                                    robots={[Function]}
+                                    robots={Array []}
                         />
             </ErrorBoundary>
 </Scroll>,
@@ -149,7 +149,7 @@ ShallowWrapper {
           "props": Object {
             "children": <ErrorBoundary>
               <CardList
-                            robots={[Function]}
+                            robots={Array []}
               />
 </ErrorBoundary>,
           },
@@ -160,7 +160,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <CardList
-                robots={[Function]}
+                robots={Array []}
 />,
             },
             "ref": null,
@@ -169,7 +169,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "robots": [Function],
+                "robots": Array [],
               },
               "ref": null,
               "rendered": null,
