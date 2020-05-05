@@ -1,8 +1,5 @@
-# robofriends-pwa
-Udemy tutorial - adding PWA capabilities to a react app
+# Why this project exists?
 
-To run the project:
+It's a side project created to play with Docker, some PWA features, CircleCI, Prettier configurations, Jest, Enzyme and more...
 
-1. Clone this repo
-2. Run `npm install`
-3. Run `npm start`
+Whats more, who don't like robots? 🤯🤖
