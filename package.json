@@ -2,7 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mikedevprojects.github.io/RoboFriends/",
+  "homepage": "https://zywmik.github.io/RoboFriends/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "husky": "^2.4.1",
